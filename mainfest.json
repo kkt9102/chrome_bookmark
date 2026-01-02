@@ -1,0 +1,24 @@
+{
+  "name": "My Bookmark",
+  "version": "1.0",
+  "description": "",
+  "icons": {
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "background": {
+    "scripts": ["scripts/background.js"],
+    "persistent": false
+  },
+  "content_scripts": {
+    "js": ["scripts/content.js"]
+  },
+  "permissions": ["storage"],
+  "browser_action": {
+    "default_icon": "favicon.png",
+    "default_popup": "./src/extension/popup.html"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
